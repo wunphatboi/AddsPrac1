@@ -1,5 +1,6 @@
 #include <iostream>
-#include "Player.h"
+#include "Computer.h"
 int main (){
+    Computer Object;
     return 0;
 }

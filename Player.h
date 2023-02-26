@@ -10,6 +10,6 @@ class Player{
     Player();
     Player(string Name, char Move);
     char makeMove(char x);
-    string getName();
+    virtual string getName() = 0;
 };
 #endif

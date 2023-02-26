@@ -1,10 +1,10 @@
 #include "Player.h"
 Player::Player(){
-    Name = NULL;
-    Move = NULL;
+    name = "";
+    move = '\0';
 };
 
-Player::Player(string Name, Char Move){
+Player::Player(string Name, char Move){
     name = Name;
     move = Move;
 };
