@@ -1,9 +1,20 @@
-//#include "Human.h"
+#include <iostream>
+#include "Human.h"
+using namespace std;
+Human::Human(){
+    name = "Human";
+};
 
-//string Player::Human(string hname){
-  //  name = hname;
-//};
+Human::Human(std::string n){
+    name = n;
+    cout << "Enter move: ";
+    cin >> move;
+};
 
-//string Player::getName(){
-  //  return name;
-//};
+std::string Human::getName(){
+    return name;
+};
+
+char Human::makeMove(){
+    return move;
+};
