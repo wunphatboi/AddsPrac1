@@ -1,4 +1,5 @@
 #include <iostream>
+#include "Player.h"
 #include "Referee.h"
 using namespace std;
 Referee::Referee(){
