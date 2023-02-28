@@ -1,7 +1,6 @@
 #include <iostream>
 #include "Player.h"
 #include "Referee.h"
-using namespace std;
 Referee::Referee(){
 };
 
@@ -36,7 +35,7 @@ Player * Referee::refGame(Player * player1, Player * player2){
     }
 };
 
-std::string Referee::getName(){
+string Referee::getName(){
     return name;
 };
 
