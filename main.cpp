@@ -3,7 +3,7 @@
 #include "Computer.h"
 #include "Human.h"
 #include "Referee.h"
-int main(){
+int main(void){
     Computer computer;
     Human human("Ollie");
     Referee ref;
