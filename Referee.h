@@ -1,5 +1,6 @@
 #ifndef REFEREE_H
 #define REFEREE_H
+#include <string>
 class Referee: public Player{
     public:
     Referee();

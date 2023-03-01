@@ -5,7 +5,7 @@ Human::Human(){
     name = "Human";
 };
 
-Human::Human(std::string n){
+Human::Human(string n){
     name = n;
     cout << "Enter move: ";
     cin >> move;
