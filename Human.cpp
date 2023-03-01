@@ -5,13 +5,13 @@ Human::Human(){
     name = "Human";
 };
 
-Human::Human(string n){
+Human::Human(std::string n){
     name = n;
     cout << "Enter move: ";
     cin >> move;
 };
 
-string Human::getName(){
+std::string Human::getName(){
     return name;
 };
 

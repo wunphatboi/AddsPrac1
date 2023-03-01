@@ -6,7 +6,7 @@ Computer::Computer(){
 
 };
 
-string Computer::getName(){
+std::string Computer::getName(){
     return name;
 };
 

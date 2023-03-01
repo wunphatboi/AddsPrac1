@@ -1,3 +1,4 @@
+
 #include <iostream>
 #include "Player.h"
 #include "Referee.h"
@@ -35,7 +36,7 @@ Player * Referee::refGame(Player * player1, Player * player2){
     }
 };
 
-string Referee::getName(){
+std::string Referee::getName(){
     return name;
 };
 

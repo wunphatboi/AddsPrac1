@@ -4,9 +4,9 @@
 #include "Human.h"
 #include "Referee.h"
 int main(){
-    Computer c;
-    Human h("Ollie");
-    Referee r;
-    r.refGame(&h,&c);
+    Computer computer;
+    Human human("Ollie");
+    Referee ref;
+    ref.refGame(&human,&computer);
     return 0;
 }

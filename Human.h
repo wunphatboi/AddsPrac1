@@ -3,8 +3,8 @@
 class Human: public Player{
     public:
     Human();
-    Human(string n);
-    string getName();
+    Human(std::string n);
+    std::string getName();
     char makeMove();
 };
 #endif
