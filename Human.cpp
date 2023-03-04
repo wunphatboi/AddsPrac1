@@ -8,7 +8,11 @@ Human::Human(){
 Human::Human(string n){
     name = n;
     cout << "Enter move: ";
-    cin >> move;
+    while((move = getchar()) != 10) 
+    {
+    moves[count1++] = move;
+    }
+    count2++;
 };
 
 std::string Human::getName(){

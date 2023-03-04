@@ -6,8 +6,13 @@ Referee::Referee(){
 };
 
 Player * Referee::refGame(Player * player1, Player * player2){
+    cout << variable;
+    //for (int z =0 ; z < player1.count1; z++){
+      //  cout << "hello";
+    //}
     if (player1->makeMove() == 'R' && player2->makeMove() == 'P') {
         cout << player2->getName() << " Wins" << endl;
+        cout << count1;
         return player2;
     }
     else if (player1->makeMove() == 'P' && player2->makeMove() == 'S') {
