@@ -2,8 +2,6 @@
 #include "Computer.h"
 Computer::Computer(){
     name = "Computer";
-    move = 'R';
-
 };
 
 std::string Computer::getName(){
@@ -11,5 +9,6 @@ std::string Computer::getName(){
 };
 
 char Computer::makeMove(){
+    move = 'R';
     return move;
 };

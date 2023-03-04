@@ -2,23 +2,19 @@
 #include "Player.h"
 #include "Human.h"
 Human::Human(){
-    name = "Human";
+    this->name = "Human";
 };
 
 Human::Human(string n){
-    name = n;
-    cout << "Enter move: ";
-    while((move = getchar()) != 10) 
-    {
-    moves[count1++] = move;
-    }
-    count2++;
+    this->name = n;
 };
 
 std::string Human::getName(){
-    return name;
+    return this->name;
 };
 
 char Human::makeMove(){
+    cout << "Enter move: ";
+    cin >> move;
     return move;
 };

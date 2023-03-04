@@ -1,4 +1,3 @@
-
 #include <iostream>
 #include "Player.h"
 #include "Referee.h"
@@ -6,32 +5,29 @@ Referee::Referee(){
 };
 
 Player * Referee::refGame(Player * player1, Player * player2){
-    cout << variable;
-    //for (int z =0 ; z < player1.count1; z++){
-      //  cout << "hello";
-    //}
-    if (player1->makeMove() == 'R' && player2->makeMove() == 'P') {
+    char temp1 = player1->makeMove();
+    char temp2 = player2->makeMove();
+    if (temp1 == 'R' && temp2 == 'P') {
         cout << player2->getName() << " Wins" << endl;
-        cout << count1;
         return player2;
     }
-    else if (player1->makeMove() == 'P' && player2->makeMove() == 'S') {
+    else if (temp1 == 'P' && temp2 == 'S') {
         cout << player2->getName() << " Wins"<< endl;
         return player2;
     }
-    else if (player1->makeMove() == 'S' && player2->makeMove() == 'R') {
+    else if (temp1 == 'S' && temp2 == 'R') {
         cout << player2->getName() << " Wins"<< endl;   
         return player2;
     }
-    else if (player1->makeMove() == 'R' && player2->makeMove() == 'S') {
+    else if (temp1 == 'R' && temp2 == 'S') {
         cout << player1->getName() << " Wins" << endl;
         return player1;
     }
-    else if (player1->makeMove() == 'P' && player2->makeMove() == 'R') {
+    else if (temp1 == 'P' && temp2 == 'R') {
         cout << player1->getName() << " Wins" << endl;
         return player1;
     }
-    else if (player1->makeMove() == 'S' && player2->makeMove() == 'P') {
+    else if (temp1 == 'S' && temp2 == 'P') {
         cout << player1->getName() << " Wins" << endl;
         return player1;
     }
@@ -39,6 +35,7 @@ Player * Referee::refGame(Player * player1, Player * player2){
         cout << "It's a Tie" << endl;
         return NULL;
     }
+    return player1;
 };
 
 std::string Referee::getName(){
